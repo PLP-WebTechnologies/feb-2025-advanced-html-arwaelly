@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced HTML elements and forms</title>
+</head>
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>Topics to Cover</h2>
+    <ol type="I">
+      <li>HTML5 Elements</li>
+      <li>Forms and Inputs</li>
+      <li>Tables</li>
+      <li>Lists</li>
+      <li>Multimedia</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Scenic Nature View" width="500" />
+  </section>
+
+  <!-- Table of Contacts -->
+  <section>
+    <h2>Contact List</h2>
+    <table border="1" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ellie Arwa</td>
+          <td>3113 Nairobi</td>
+          <td>0798765765</td>
+          <td>ellli@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Lawi</td>
+          <td>4568 Kisumu</td>
+          <td>0786756743</td>
+          <td>lawi@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Kins</td>
+          <td>7899 Majengo</td>
+          <td>0789765432</td>
+          <td>kinstaicy@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Dickens</td>
+          <td>3897 Nakuru</td>
+          <td>0786535679</td>
+          <td>dickenskuro@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mishelle</td>
+          <td>6547 Kisumu</td>
+          <td>0756786543</td>
+          <td>mishelle@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter full name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email" required /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6" /><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <label for="gender">Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br /><br />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select Country--</option>
+        <option value="usa">Kenya</option>
+        <option value="uk">Uganda</option>
+        <option value="canada">Tanzania</option>
+        <option value="india">Somalia</option>
+      </select><br /><br />
+
+      <label>Skills:</label><br />
+      <input type="checkbox" id="html" name="skills" value="HTML" />
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="skills" value="CSS" />
+      <label for="css">CSS</label>
+      <input type="checkbox" id="js" name="skills" value="JavaScript" />
+      <label for="js">JavaScript</label><br /><br />
+
+      <input type="submit" value="Register" />
+    </form>
+  </section>
+
+  <!-- Multimedia Section -->
+  <section>
+    <h2>Multimedia</h2>
+    
+    <!-- Audio Element -->
+    <h3>Sample Audio</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Element -->
+    <h3>Sample Video</h3>
+    <video width="500" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+</body>
+</html>
